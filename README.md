@@ -1,8 +1,11 @@
-# MaxHome
+MaxHome
+=============================
+
 Projet de domotique personnelle DIY à bas coût
 
 
-##Présentation
+Présentation
+----------------------------------
 ### Pourquoi un système de plus ?
 Il existe déjà de nombreux système domotiques, ouverts ou non. N'ayant pas trouvé de système idéal pour mon usage, j'ai donc décidé de m'en construire un "from scratch". Les motivations principales sont avant tout le **plaisir** d'apprendre et la **passion**. 
 
@@ -10,7 +13,8 @@ Ma contrainte de base est le coût. C'est ce qui me gène le plus dans la domoti
 
 Ce projet est un projet personnel qui n'a pas pour but une commercialisation ni une distribution massive. Il reste néanmoins accessible et open-source mais il n'y a aucun support de prévu . C'est en quelque sorte un grand bac à sable pour jouer avec des problématiques hardware, radio, software, interface, serveur...
 
-### Technologies employées
+Technologies employées
+----------------------------------
 
  - Principalement du **javascript** pour le serveur et l'interface.
  - La passerelle et les modules dit "hardware" sont codés  en **C à l'aide des librairies Arduino**
@@ -18,7 +22,8 @@ Ce projet est un projet personnel qui n'a pas pour but une commercialisation ni 
 
 Les différentes parties seront détaillées dans la documentation mais peuvent tout à fait évoluer en cours de route.
 
-##Objectif(s)
+Objectif(s)
+----------------------------------
 
  - Créer un système de domotique permettant de monitorer et contrôler un environnement d'habitat.
  - Le rendre le plus modulable possible pour être modifié et amélioré
@@ -27,7 +32,8 @@ Les différentes parties seront détaillées dans la documentation mais peuvent 
  - Rendre le système autonome ( scénarios, apprentissages )
  - **Se faire plaisir**
 
-##Historique
+Historique
+----------------------------------
 ( photos à venir )
 ### V3
 Après avoir testé des modules nrf24 j'ai décidé d'opter pour des modules un peu plus cher ( moins de 5€) mais beaucoup plus efficace , les rfm69. J'ai choisit d'utiliser la bande des 868Mhz . Quelques protocoles domotique commencent à l'utiliser mais il est interessant sur un point particulier à mon avis, cette fréquence est assez peu polluée ( entre le 433Mhz et le wifi à 2.4Ghz) . On profite aussi d'un meilleur débit même si ce n'est pas un soucis dans mon cas. La pénétration ainsi que la portée est sensé être moins importante qu'avec le 433Mhz mais reste plus que convenable pour un usage local ( maison + petit jardin ) . Pour finir, du fait du changement de fréquence, les antennes sont 2 fois moins grandes que pour du 433Mhz ( 8.2cm pour du 1/4 d'onde contre 16cm avec le 433Mhz) .
